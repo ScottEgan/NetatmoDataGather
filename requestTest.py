@@ -16,7 +16,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-# Make sure you put the corrent data in the config.ini file
+# Make sure you put the correct data in the config.ini file
 # Pull user specific influxdb data from config.ini
 INFLUX_HOST = config['INFLUX']['HOST']
 INFLUX_PORT = config['INFLUX']['PORT']
