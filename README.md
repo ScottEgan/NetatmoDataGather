@@ -46,7 +46,7 @@ You will need a ID and Key from Netatmo in order to use their API.
 1. See fetchAndWriteData.py [here](https://github.com/ScottEgan/NetatmoDataGather)
 2. I think netatmo stores data every 10min so set code to run every 8
    - Use cron: [https://www.raspberrypi.org/documentation/linux/usage/cron.md](https://www.raspberrypi.org/documentation/linux/usage/cron.md)
-   - I used:  
+   - Example:  
    ```*/8 \* \* \* \* /home/pi/fetchAndWriteData.py >> /home/pi/netatmoLogs.txt```  
      The >> means that the script output will be appended to the .txt file that follows
   
