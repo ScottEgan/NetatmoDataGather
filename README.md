@@ -1,14 +1,14 @@
 # Netatmo Database and Graph Visualization
+This is a tutorial for setting up a Raspberry Pi to fetch and store Netatmo weather station data in a InfluxDB database. Information is also included for displaying the database information with Grafana on a kiosk style screen.
 
-### Using:
+![Netatmo Dashboard](NetatmoDash.PNG "Netatmo Dashboard")
+
+## Using:
 
 - Raspberry Pi
 - Netatmo API
 - InfluxDB
 - Grafana  
-
-This is a tutorial for setting up a Raspberry Pi to fetch and store Netatmo weather station data in a InfluxDB database while also displaying the database information with Grafana on a kiosk style screen  
-fetchAndWriteData.py was adapted from: https://gist.github.com/arnesund/29ffa1cdabacabe323d3bc45bc7db3fb
 
 ## 1. Install Rasbian and Configure Pi
 
@@ -43,7 +43,7 @@ You will need a ID and Key from Netatmo in order to use their API.
 
 ## 4. Write a script to handle the data
 
-1. See fetchAndWriteData.py [here](https://github.com/ScottEgan/NetatmoDataGather)
+1. See [fetchAndWriteData.py](https://github.com/ScottEgan/NetatmoDataGather). This file was adapted from github user [arnesund](https://gist.github.com/arnesund/29ffa1cdabacabe323d3bc45bc7db3fb)
 2. I think netatmo stores data every 10min so set code to run every 8
    - Use cron: [https://www.raspberrypi.org/documentation/linux/usage/cron.md](https://www.raspberrypi.org/documentation/linux/usage/cron.md)
    - Example:  
